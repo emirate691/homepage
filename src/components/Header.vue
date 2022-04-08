@@ -4,7 +4,7 @@
         <div class="container">
           <a class="navbar-brand" href="#">
             
-            <img src="/assets/logo.png">
+            <img src="@/assets/Vector 21.png">
             Brander
           
           </a>
@@ -130,6 +130,9 @@ a{
 .nav__item{
   padding: 0 20px
   
+}
+.nav__item-link{
+  text-decoration: none;
 }
 #chat{
   background:  #fdca55;

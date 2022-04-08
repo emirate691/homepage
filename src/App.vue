@@ -1,16 +1,25 @@
 <template>
   <div id="app">
- <Header />
+     <Header />
+        <div class="app-detail"></div>
 
-   <div class="app-detail">
-    <h3>Create<span class="dot">.</span></h3>
-    <h2>Digital Spaces</h2>
-    <p> with us</p>
-    <p>Digital agency helping saas brands<br/> build amazing websites</p>
-  </div>
-      
-  </div>
+
+     
+                  
+                      <div class="app-content">
+                      <h3>Create<span class="dot">.</span></h3>
+                      <h2>Digital Spaces</h2>
+              
+                      <p class="with"> with us</p>
+                      <p class="digital">Digital agency helping saas brands<br/> build amazing websites</p>
+                  
+              
+                      </div>
+     
+
+         
   
+  </div>
 </template>
 <script>
 
@@ -53,20 +62,28 @@ export default {
   font-size:
 }
 .app-detail{
-  margin: 150px;
+  position:absolute;
+  
   background-image:url('~@/assets/spot.svg');
   position: absolute;
 width: 690px;
 height: 774px;
-left: 51px;
-top: 53px;
+left: 200px;
+top: 153px;
 mix-blend-mode: soft-light;
 
 
 
 
 }
-.app-detail h2 {
+
+
+.app-content{
+  position: absolute;
+  top:200px;
+  left:120px;
+}
+.app-content h2 {
   width: 1057px;
 height: 129px;
   font-family: 'Poppins';
@@ -75,9 +92,9 @@ font-weight: 700;
 font-size: 144px;
 line-height: 128px;
   color:white;
-  opacity:100%
+  opacity:0.1px;
 }
-.app-detail h3{
+.app-content h3{
  
   font-family: 'Quando';
 font-style: normal;
@@ -93,8 +110,26 @@ color: #FFFFFF;
   color:#fdca55;
 }
 
-.app-detail p {
-  font-family: 'Poppins';
+.app-content .with {
+
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 43px;
+/* or 179% */
+
+text-align: center;
+margin-top:70px;
+
+color: #FFFFFF;
+}
+
+.app-content .digital {
+
+
+font-family: 'Poppins';
 font-style: normal;
 font-weight: 300;
 font-size: 24px;
