@@ -1,17 +1,24 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Solution from '../views/Solution.vue'
-import About from '../views/About.vue'
-import Join from '../views/Join.vue'
-import Insight from '../views/Insight.vue'
-import Work from '../views/Work.vue'
+import Home from '@/components/Home.vue'
+import Solution from '@/views/Solution.vue'
+import About from '@/views/About.vue'
+import Join from '@/views/Join.vue'
+import Insight from '@/views/Insight.vue'
+import Work from '@/views/Work.vue'
 
 
 Vue.use(VueRouter)
 
 const routes = [
+
+   {
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
   {
-    path: '/Solution',
+    path: '/',
     name: 'Solution',
     component: Solution
   },
@@ -22,7 +29,7 @@ const routes = [
   },
    {
     path: '/work',
-    name: 'work',
+    name: 'Work',
     component: Work
    },
 

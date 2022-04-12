@@ -1,25 +1,29 @@
 <template>
-    <header class="header header-transparent header-layout3">
-      <nav class="navbar navbar-expand-lg sticky-navbar">
-        <div class="container">
-          <a class="navbar-brand" href="#">
+  <div>
+  <b-navbar toggleable="lg" type="dark" variant="">
+    <b-navbar-brand href="#">
+      <a class="navbar-brand" href="#">
+          
             
-            <img src="@/assets/Vector 21.png">
+            <img src="@/assets/Vector 21.svg">
             Brander
           
           </a>
-          <button class="navbar-toggler" type="button">
-            <span class="menu-lines"><span></span></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mainNavigation">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav__item with-dropdown">
-                <a href="#" class="nav__item-link" @click="gotoSolution()">Solutions</a>
+    </b-navbar-brand>
+
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+    <b-collapse id="nav-collapse" is-nav>
+      
+      <ul class="navbar-nav mx-auto">
+              <li class="nav__item">
+                 <a href="/Solution" class="nav__item-link" @click="gotoSolution()">Solution</a>
+              
               </li>
               <!-- /.nav-item -->
               <!-- /.nav-item -->
               <li class="nav__item">
-                <a href="#" class="nav__item-link" @click="gotoWork()">Work</a>
+                <a href="/Work" class="nav__item-link" @click="gotoWork()">Work</a>
               </li>
               <!-- /.nav-item -->
               <li class="nav__item">
@@ -28,19 +32,19 @@
               <!-- /.nav-item -->
              
               <li class="nav__item">
-                <a href="#" class="nav__item-link" @click="gotoJoin()">Join Us</a>
+                <a href="/Join" class="nav__item-link" @click="gotoJoin()">Join Us</a>
               </li>
               <!-- /.nav-item -->
                <li class="nav__item">
-                <a href="#" class="nav__item-link" @click="gotoInsight()">Insight</a>
+                <a href="/Insight" class="nav__item-link" @click="gotoInsight()">Insight</a>
               </li>
               <!-- /.nav-item -->
 
             </ul>
-            <!-- /.navbar-nav -->
-          </div>
-          <!-- /.navbar-collapse -->
-          <ul class="header-actions__list list-unstyled d-flex align-items-center mb-0">
+  
+      <!-- Right aligned nav items -->
+      <b-navbar-nav class="ml-auto">
+        <ul class="header-actions__list list-unstyled d-flex align-items-center mb-0">
             <li>
               <a href="#" class="btn btn__ header__btn__sm" id="chat"  v-b-modal.modal-sm>Lets Talk</a>
               <right>
@@ -73,17 +77,13 @@
             </li>
            
           </ul>
-          <!-- /.actions__list -->
-        </div>
-        <!-- /.container -->
-      </nav>
-      <!-- /.navabr -->
-    </header>
-
+      
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
+</div>
 </template>
 <script>
-//import Demo from "@/views/Demo.vue";
-//import { component } from "vue/types/umd";
 export default {
   name: "Header",
   data() {
@@ -137,9 +137,7 @@ a{
 #chat{
   background:  #fdca55;
   color:black;
+  margin-right: 50px;
 }
 
-
- 
- 
 </style>
