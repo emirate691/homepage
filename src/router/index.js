@@ -6,45 +6,55 @@ import About from '@/views/About.vue'
 import Join from '@/views/Join.vue'
 import Insight from '@/views/Insight.vue'
 import Work from '@/views/Work.vue'
+import Talk from '@/views/Talk.vue'
 
 
 Vue.use(VueRouter)
 
 const routes = [
 
-   {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
   {
     path: '/',
-    name: 'Solution',
-    component: Solution
+    name: 'home',
+    component: Home,
+  },
+  {
+    path: '/solution',
+    name: 'solution',
+    component: Solution,
+    meta: {
+      layout: 'default',
+    },
   },
   {
     path: '/about',
-    name: 'About',
+    name: 'about',
     component: About
   },
-   {
+
+  {
     path: '/work',
-    name: 'Work',
+    name: 'work',
     component: Work
-   },
+  },
 
-  
-    {
+  {
     path: '/insight',
-    name: 'Insight',
+    name: 'insight',
     component: Insight
-   },
+  },
 
-    {
+  {
     path: '/join',
-    name: 'Join',
+    name: 'join',
     component: Join
-   }
+  },
+
+  {
+    path: '/talk',
+    name: 'talk',
+    component: Talk
+  }
 
    
    

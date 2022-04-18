@@ -7,7 +7,7 @@
             <div class="h-100 flex-1">
                 <div class="h-100 p-5">
                     <h1>
-                        Insight
+                        Lets Talk
                     </h1> 
                     <div>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti id exercitationem modi ea eius voluptatibus excepturi similique corporis debitis architecto rerum sapiente, aut veniam vel saepe placeat alias vero necessitatibus?
@@ -38,7 +38,7 @@ import Navbar from '../components/Navbar.vue';
 import Footer from '../components/Footer.vue';
 
 export default {
-    name: "Insight",
+    name: "Talk",
     components: { Navbar, Footer },
 
     data() {
