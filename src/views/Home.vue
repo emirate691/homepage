@@ -4,28 +4,8 @@
             <div>
                 <Navbar />
             </div>
-            <div class="h-100 flex-1">
-                <div class="h-100 p-5">
-                    <h1>
-                        Homepage
-                    </h1> 
-                    <div>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti id exercitationem modi ea eius voluptatibus excepturi similique corporis debitis architecto rerum sapiente, aut veniam vel saepe placeat alias vero necessitatibus?
-                        Homepage Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti id exercitationem modi ea eius voluptatibus excepturi similique corporis debitis architecto rerum sapiente, aut veniam vel saepe placeat alias vero necessitatibus?
-                        Homepage Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti id exercitationem modi ea eius voluptatibus excepturi similique corporis debitis architecto rerum sapiente, aut veniam vel saepe placeat alias vero necessitatibus?
-                        Homepage Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti id exercitationem modi ea eius voluptatibus excepturi similique corporis debitis architecto rerum sapiente, aut veniam vel saepe placeat alias vero necessitatibus?
-                    </div>
-                    <div>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti id exercitationem modi ea eius voluptatibus excepturi similique corporis debitis architecto rerum sapiente, aut veniam vel saepe placeat alias vero necessitatibus?
-                        Homepage Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti id exercitationem modi ea eius voluptatibus excepturi similique corporis debitis architecto rerum sapiente, aut veniam vel saepe placeat alias vero necessitatibus?
-                        Homepage Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti id exercitationem modi ea eius voluptatibus excepturi similique corporis debitis architecto rerum sapiente, aut veniam vel saepe placeat alias vero necessitatibus?
-                        Homepage Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti id exercitationem modi ea eius voluptatibus excepturi similique corporis debitis architecto rerum sapiente, aut veniam vel saepe placeat alias vero necessitatibus?
-                    </div>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti id exercitationem modi ea eius voluptatibus excepturi similique corporis debitis architecto rerum sapiente, aut veniam vel saepe placeat alias
-                         exercitationem modi ea eius voluptatibus excepturi similique corporis debitis architecto rerum sapiente, aut veniam vel saepe placeat alias exercitationem modi ea eius voluptatibus excepturi similique corporis debitis architecto rerum sapiente, aut veniam vel saepe placeat alias exercitationem modi ea eius voluptatibus excepturi similique corporis debitis architecto rerum sapiente, aut veniam vel saepe placeat alias exercitationem modi ea eius voluptatibus excepturi similique corporis debitis architecto rerum sapiente, aut veniam vel saepe placeat alias exercitationem modi ea eius voluptatibus excepturi similique corporis debitis architecto rerum sapiente, aut veniam vel saepe placeat alias exercitationem modi ea eius voluptatibus excepturi similique corporis debitis architecto rerum sapiente, aut veniam vel saepe placeat alias exercitationem modi ea eius voluptatibus excepturi similique corporis debitis architecto rerum sapiente, aut veniam vel saepe placeat alias
-                    </p>
-                </div>
+            <div class="h-100 flex-1 p-5">
+                <Homepage />
             </div>
         </div>
         <div class="footer__container">
@@ -36,10 +16,11 @@
 <script>
 import Navbar from '../components/Navbar.vue';
 import Footer from '../components/Footer.vue';
+import Homepage from '../components/pages/Homepage.vue';
 
 export default {
-    name: "Homepage",
-    components: { Navbar, Footer },
+    name: "Home",
+    components: { Navbar, Footer, Homepage },
 
     data() {
       return {
