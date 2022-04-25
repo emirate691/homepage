@@ -1,7 +1,7 @@
 <template>
-    <div class="h-100 homepage__component">
+    <div class="h-100 about__component">
         <!-- start changes here -->
-        <h1>Homepage content should be placed here</h1>
+        <h1>About us content should be placed here</h1>
 
         <h3>
             Insert content and remove all dummy text
@@ -36,7 +36,6 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi recusandae ullam ipsam ea enim culpa modi vitae sint, aut molestiae commodi blanditiis obcaecati porro sunt beatae optio. Officia, eum dignissimos.
             </div>
         </div>
-
     </div>
 </template>
 
@@ -51,7 +50,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.homepage__component {
+.about__component {
     background: #fff;
 }
 </style>

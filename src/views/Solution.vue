@@ -1,5 +1,5 @@
 <template>
-    <b-container fluid class="homepage__container p-0 m-0">
+    <b-container fluid class="solution__container p-0 m-0">
         <div>
             <div>
                 <Navbar />
@@ -30,7 +30,7 @@ export default {
 }
 </script>
 <style lang="scss">
-.homepage__container {
+.solution__container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;

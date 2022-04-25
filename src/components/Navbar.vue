@@ -17,9 +17,9 @@
                         <b-row class="mx-auto w-100 justify-content-center align-items-center">
                             <b-col class="w-100">
                                 <b-navbar-nav>
-                                    <b-nav-item href="/solution" class="mx-2 nav-item">Solution</b-nav-item>
-                                    <b-nav-item href="/work" class="mx-2 nav-item">Work</b-nav-item>
-                                    <b-nav-item href="/about" class="mx-2 nav-item">About Us</b-nav-item>
+                                    <b-nav-item href="/solution" class="mx-1 nav-item">Solution</b-nav-item>
+                                    <b-nav-item href="/work" class="mx-1 nav-item">Work</b-nav-item>
+                                    <b-nav-item href="/about" class="mx-1 nav-item">About Us</b-nav-item>
                                 </b-navbar-nav>
                             </b-col>
 
@@ -32,8 +32,8 @@
 
                             <b-col class="w-100">
                                 <b-navbar-nav>
-                                    <b-nav-item href="/join" class="mx-2 nav-item">Join Us</b-nav-item>
-                                    <b-nav-item href="/insight" class="mx-2 nav-item">Insights</b-nav-item>
+                                    <b-nav-item href="/join" class="mx-1 nav-item">Join Us</b-nav-item>
+                                    <b-nav-item href="/insight" class="mx-1 nav-item">Insights</b-nav-item>
                                     <b-nav-item href="/talk" class="nav-item">
                                         <img id="brand-logo" src="@/assets/messages.svg">
                                         <span class="mx-1">Let's Talk</span>
