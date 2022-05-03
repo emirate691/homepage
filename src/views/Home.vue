@@ -1,5 +1,5 @@
 <template>
-    <b-container fluid class="home__container p-0 m-0">
+    <div class="home__container p-0 m-0">
         <div>
             <div>
                 <Navbar />
@@ -11,7 +11,7 @@
         <div class="footer__container">
             <Footer />
         </div>
-    </b-container>
+    </div>
 </template>
 <script>
 import Navbar from '../components/Navbar.vue';

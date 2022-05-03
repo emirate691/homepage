@@ -1,6 +1,7 @@
 <template>
     <div class="h-100 homepage__component">
         <!-- start changes here -->
+        
         <h1 class=" display-3 mx-5">Creating <img style="height:50px" src="@/assets/ring.svg">
             <span class="m-3">Products</span>
             <img style="width:90px" src="@/assets/left-arrow.svg">
@@ -11,19 +12,21 @@
             <span class="font-italic"> With Outstanding</span>
             <img style="height:40px" src="@/assets/elipse-shape.svg">
             <span class="font-weight-light">Visual </span>
+        
         </h1>
         <h3 class="display-3 mx-5" style="padding-left:300px">
             <span class="font-weight-light">and Great</span> 
             <img style="height:40px" src="@/assets/wave-shape.svg"> 
             <span class=""> Functionality</span>
+        
         </h3>
 
-                
+        
         <div>
             <b-row>
                 <b-col cols-sm="12">
                     <div class="d-flex">
-                        <p class="mb-0 m-5" style="padding-right:480px"> 
+                        <p class="mb-0 m-5" style="padding-right:420px"> 
                             <span class="" style="margin-left:50px">DeBrander is a multidisciplinary design agency 
                             that</span> 
                             combines <strong>design, technology, art,</strong> and <strong>strategy </strong> to create
@@ -152,7 +155,7 @@
     <div class="">
         <b-row>
             <b-col cols-sm="12">
-                <p class="m-5 text-center                                                                                                                                                                                                                                                                                                                                     display-4" style="padding-right:250px; padding-left:180px"> We translate research into solutions, crafting thoughtful and unified brands, apps, websites, interfaces, and systems.
+                <p class="m-5                                                                                                                                                                                                                                                                                                                                     display-4" style="padding-right:250px; padding-left:180px"> We translate research into solutions, crafting thoughtful and unified brands, apps, websites, interfaces, and systems.
                     <img src="@/assets/wave-shapes.svg">
                     <img src="@/assets/pet.svg">
                 </p>
@@ -184,7 +187,7 @@
         <div class="fifth-section">
                 <div class="fifth-section-background">
                     <b-row>
-                
+                        
                         <b-col cols-sm="12">
                             <h3 class="font-weight-bold m-5 pt-5" style="padding-left:100px; padding-right:220px">How can we work together?</h3>
                             <p class="" style="padding-left:150px; padding-right:200px">We’ve developed a simple onboarding process to help us better understand our client's strategic needs.</p>
@@ -194,7 +197,7 @@
                             <img  style="height:200px" src="@/assets/get-started.svg">
                             <img class="mx-5" style="height:330px; padding-top:80px" src="@/assets/iamge 2.svg">
 
-                        </b-col> 
+                        </b-col>  
                    </b-row>
                 </div>
                <div class="last-sect"> 
@@ -264,7 +267,8 @@
 export default {
     data() {
         return {
-            // 
+             currentYear: new Date().getFullYear(), // 2020
+
         };
     }
 }
@@ -272,8 +276,7 @@ export default {
 
 <style lang="scss" scoped>
 .homepage__component {
-    background: #fff;
-
+    background:#fff
 }
 .container{
     position:relative
@@ -281,19 +284,13 @@ export default {
 .overlay{
     background: rgba(196, 196, 196, 0.5);
     z-index:9;
-    margin-top:350px;
-    
-       
-
-    
+    margin-top:350px;   
 }
-
 .second{
    position:absolute;
    top:0;
    left:0;
-   opacity:0.5
-   
+   opacity:0.5 
 }
 .third-section{
     background:#11271F;
@@ -371,6 +368,9 @@ q::before {
     /* top:6180px;*/
      right:0
  }
-
-
+.vertical-line{
+    border-left:1px solid;
+    height:100px;
+    margin-top:0 
+}
 </style>
